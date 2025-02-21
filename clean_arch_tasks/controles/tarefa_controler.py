@@ -3,7 +3,7 @@ from typing import List
 from fastapi import FastAPI
 from pydantic import BaseModel
 from casos_uso.caso_uso_tarefa import TarefaUseCase
-from infraestrutura.tarefa_repository import InMemoryTarefaRepository
+from infraestrutura.in_memory_tarefa_repository import InMemoryTarefaRepository
 
 api=FastAPI()
 # TODO: Melhorar a documentação com base em https://medium.com/codex/how-to-document-an-api-for-python-fastapi-best-practices-for-maintainable-and-readable-code-a183a3f7f036
