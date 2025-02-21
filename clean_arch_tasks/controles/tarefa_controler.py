@@ -17,7 +17,7 @@ class TarefaCreateSchema(BaseModel):
     titulo: str
     descricao: str
  
-caso_uso_tarefa=TarefaUseCase(InMemoryTarefaRepository())
+caso_uso_tarefa=TarefaUseCase(InMemoryTarefaRepository()) # Mudar esse linha
 
 @api.get("/tarefas",response_model=List[TarefaSchema])
 async def listar_tarefas():
